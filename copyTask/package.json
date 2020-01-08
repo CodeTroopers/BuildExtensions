@@ -1,0 +1,38 @@
+{
+	"name": "excel-copy",
+	"version": "1.0.0",
+	"description": "Copy from multi-sources to multi-targets",
+	"main": "index.js",
+	"scripts": {
+		"build-in-single-file": "rollup -c",
+		"build": "tsc",
+		"test": "npm run build && mocha tests/suite.js"
+	},
+	"repository": {
+		"type": "tfs",
+		"url": "http://rits-tfs-01.rits.local:8080/tfs/defaultcollection/RefreshITSolutionsTools/"
+	},
+	"author": "Refresh IT Solutions",
+	"license": "ISC",
+	"dependencies": {
+		"azure-pipelines-task-lib": "^2.9.3",
+		"copy": "^0.3.2",
+		"xlsx": "^0.15.3"
+	},
+	"devDependencies": {
+		"@rollup/plugin-node-resolve": "^6.0.0",
+		"@rollup/plugin-typescript": "^2.0.1",
+		"@types/chai": "^4.2.6",
+		"@types/copy": "^0.3.1",
+		"@types/mocha": "^5.2.7",
+		"@types/node": "^12.12.14",
+		"@types/q": "^1.5.2",
+		"chai": "^4.2.0",
+		"mocha": "^6.2.2",
+		"rollup": "^1.27.9",
+		"rollup-plugin-commonjs": "^10.1.0",
+		"sync-request": "^6.1.0",
+		"tslib": "^1.10.0",
+		"typescript": "^3.7.2"
+	}
+}

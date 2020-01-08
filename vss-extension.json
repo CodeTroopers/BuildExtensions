@@ -1,0 +1,36 @@
+{
+	"manifestVersion": 1,
+	"id": "build-release-tools",
+	"name": "RITS Build and Release Tools",
+	"version": "1.0.0",
+	"publisher": "refresh-it-solutions",
+	"targets": [{
+		"id": "Microsoft.VisualStudio.Services"
+	}],
+	"description": "Tools for building and releasing Refresh IT Solutions products.",
+	"categories": [
+		"Build and release"
+	],
+	"icons": {
+		"default": "images/logo.png"
+	},
+	"files": [{
+		"path": "copyTask/index.js"
+	}, {
+		"path": "copyTask/task.json"
+	}, {
+		"path": "copyTask/icon.png"
+	}, {
+		"path": "copyTask/node_modules"
+	}],
+	"contributions": [{
+		"id": "excel-copy",
+		"type": "ms.vss-distributed-task.task",
+		"targets": [
+			"ms.vss-distributed-task.tasks"
+		],
+		"properties": {
+			"name": "copyTask"
+		}
+	}]
+}
